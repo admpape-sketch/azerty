@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Azerty Multiservices – Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- header snippet -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.jpg.png" alt="Azerty Multiservices" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="produits.html">Produits</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contactez-nous</h2>
+      <!-- Seksyon Fòm Kontak -->
+<section id="contact-form" style="max-width: 350px; margin: 20px auto;">
+  <h3>send your message</h3>
+  <form onsubmit="sendEmail(event)">
+    <input type="text" name="user_name" placeholder="your name" required />
+    <input type="email" name="user_email" placeholder="your email" required />
+    <textarea name="message" rows="3" placeholder="write your message here..." required></textarea>
+    <button type="submit">send</button>
+  </form>
+</section>
+
+<!-- Script EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("S6uyagbjmFygjBTkN"); // Ranplase ak PUBLIC KEY ou
+  })();
+
+  function sendEmail(e) {
+    e.preventDefault();
+    emailjs.sendForm('service_qn7660a', 'template_y824wiy', e.target)
+      .then(() => {
+        alert('✅ thank you for your message!');
+        e.target.reset();
+      }, (error) => {
+        alert('❌ Gen yon erè, eseye ankò.');
+        console.error(error);
+      });
+  }
+</script>
+
+<!-- Ti Style senp -->
+<style>
+  #contact-form {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+
+  #contact-form h3 {
+    margin-bottom: 10px;
+    color: #007bff;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+    margin: 6px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+
+  #contact-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 0;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  #contact-form button:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+  <!-- footer snippet -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <p>© 2025 Azerty Multiservices. Tous droits réservés.</p>
+      <p>Email : azertymultiservices4@gmail.com | Téléphone : +509 39045395</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
