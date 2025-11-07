@@ -1,94 +1,346 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Azerty Multiservices – Produits</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Azerty Multiservices – Produits</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"> 
+  <style>
+    /* CSS KORIJE POU AMELIORE VIZYÈL LA */
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 1px solid #ddd;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+    .card-img-top {
+        height: 200px; /* Pou tout imaj yo gen menm wotè */
+        object-fit: cover; /* Pou imaj yo byen chita nan espas la san yo pa defòme */
+    }
+  </style>
 </head>
 <body>
-  <!-- header snippet -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="logo.jpg.png.jpg" alt="Azerty Multiservices" height="50">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link active" href="produits.html">Produits</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.jpg.png.jpg" alt="Azerty Multiservices" height="50"> 
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="produits.html">Produits</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Nos Produits</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="laptop.jpg.jpg.jpg" class="card-img-top" alt="Laptop">
-            <img src="laptop1.jpg.jog.jpg" class="card-img-top" alt="Laptop">
-            <img src="laptop2.jpg.jpg.jpg" class="card-img-top" alt="Laptop">
-            <img src="laptop3.jpg.jpg.jpg" class="card-img-top" alt="Laptop">
-            <img src="laptop4.jpg.jpg.jpg" class="card-img-top" alt="Laptop">
-            <img src="laptop5.jpg.jpg.jpg" class="card-img-top" alt="Laptop">
-            <img src="laptop6.jpg.jpg.jpg" class="card-img-top" alt="Laptop">
-            <img src="laptop7.jpg.jpg.jpg" class="card-img-top" alt="Laptop">
-            <div class="card-body">
-              <h5 class="card-title">Laptop Professionnel</h5>
-              <p class="card-text">Ordinateurs portables puissants pour usage professionnel.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="casque.jpg.jpg.jpg" class="card-img-top" alt="Accessoire">
-            <img src="casque1.jpg.jpg.jpg" class="card-img-top" alt="Accessoire">
-            <img src="climsanfil.jpg.jpg.jpg" class="card-img-top" alt="Accessoire">
-            <img src="jump.jpg.jpg.jpg" class="card-img-top" alt="Accessoire">
-            <img src="lunettes.jpg.jpg.jpg" class="card-img-top" alt="Accessoire">
-            <img src="montre.jpg.jpg.jpg" class="card-img-top" alt="Accessoire">
-            <div class="card-body">
-              <h5 class="card-title">Accessoires Informatique</h5>
-              <p class="card-text">lunettres,claviers, casques,montre connected, disques durs externes etc.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="montre1.jpg.jpg.jpg" class="card-img-top" alt="Produit sur demande">
-            <img src="montre2.jpg.jpg.jpg" class="card-img-top" alt="Produit sur demande">
-            <img src="matela.jpg.jpg.jpg" class="card-img-top" alt="Produit sur demande">
-            <img src="tent.jpg.jpg.jpg" class="card-img-top" alt="Produit sur demande">
-             <img src="transmometre.jpg.jpg.jpg" class="card-img-top" alt="Laptop">
-            <div class="card-body">
-              <h5 class="card-title">Autre sur demande</h5>
-              <p class="card-text">Matériel spécifique selon vos besoins.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Catalogue de Produits</h2>
+      <div class="row g-4">
+        
+         
+        
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="laptop1.jpg.jog.jpg" class="card-img-top" alt="Laptop Professionnel 2">
+            <div class="card-body">
+              <h5 class="card-title">Laptop </h5>
+              <p class="card-text">Design élégant, idéal pour le télétravail.</p>
+            </div>
+          </div>
+        </div>
 
-  <!-- footer snippet -->
-  <footer class="bg-dark text-light py-4">
-    <div class="container text-center">
-      <p>© 2025 Azerty Multiservices. Tous droits réservés.</p>
-      <p>Email : azertymultiservices4@gmail.com | Téléphone : +509 39045395</p>
-    </div>
-  </footer>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="laptop2.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 3">
+            <div class="card-body">
+              <h5 class="card-title">Laptop </h5>
+              <p class="card-text">Performance et autonomie exceptionnelles.</p>
+            </div>
+          </div>
+        </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="laptop3.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">Laptop </h5>
+              <p class="card-text">Format compact, parfait pour les déplacements.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="laptop4.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">Laptop </h5>
+              <p class="card-text">Format compact, parfait pour les déplacements.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="laptop5.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">Laptop </h5>
+              <p class="card-text">Format compact, parfait pour les déplacements.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="laptop6.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">Laptop</h5>
+              <p class="card-text">Format compact, parfait pour les déplacements.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="laptop7.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">Laptop </h5>
+              <p class="card-text">Format compact, parfait pour les déplacements.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="jump.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">jump</h5>
+              <p class="card-text">Format compact, parfait pour les déplacements.</p>
+            </div>
+          </div>
+        </div>
+
+       <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="lunettes.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">Lunettes Anti-fatigue et autres</h5>
+              <p class="card-text">Protège vos yeux des écrans.</p>
+            </div>
+          </div>                 
+        **</div>**         <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="matela.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">matela </h5>
+              <p class="card-text"> parfait pour les déplacements.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="montre.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">montre</h5>
+              <p class="card-text">parfait pour le sport.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="montre1.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">montre</h5>
+              <p class="card-text">parfait pour le sport.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="montre2.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">montre </h5>
+              <p class="card-text">parfait pour le sport.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="image33.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">montre</h5>
+              <p class="card-text">parfait pour le sport.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="image34.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">montre </h5>
+              <p class="card-text">parfait pour le sport.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="image35.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">montre</h5>
+              <p class="card-text">parfait pour le sport.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="image36.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">montre </h5>
+              <p class="card-text">parfait pour le sport.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="image37.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">montre </h5>
+              <p class="card-text">parfait pour le sport.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="image37.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">montre</h5>
+              <p class="card-text">parfait pour le sport.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="image38.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">montre </h5>
+              <p class="card-text">parfait pour le sport.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="image41.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">micro et autre </h5>
+              <p class="card-text">ideal pour animation.</p>
+            </div>
+          </div>
+        </div>
+
+         <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="image43.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">casque moto </h5>
+              <p class="card-text">ideal pour moto sport.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="image40.jpg.jpg.jpg" class="card-img-top" alt="Laptop Professionnel 4">
+            <div class="card-body">
+              <h5 class="card-title">montre </h5>
+              <p class="card-text">ideal pour sport .</p>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+             <img src="casque.jpg.jpg.jpg" class="card-img-top" alt="Casque Audio">
+            <div class="card-body">
+              <h5 class="card-title">Casque Bluetooth Pro</h5>
+              <p class="card-text">Qualité sonore HD et annulation de bruit.</p>
+            </div>
+          </div>
+        </div>
+
+          
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+             <img src="casque1.jpg.jpg.jpg" class="card-img-top" alt="Casque Audio">
+            <div class="card-body">
+              <h5 class="card-title">Casque Bluetooth Pro</h5>
+              <p class="card-text">Qualité sonore HD et annulation de bruit.</p>
+            </div>
+          </div>
+        </div>
+
+          
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+             <img src="climsanfil.jpg.jpg.jpg" class="card-img-top" alt="Casque Audio">
+            <div class="card-body">
+              <h5 class="card-title">Climatsanfil</h5>
+              <p class="card-text">.</p>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="tent.jpg.jpg.jpg" class="card-img-top" alt="Tente de Camping">
+            <div class="card-body">
+              <h5 class="card-title">Tente de Camping</h5>
+              <p class="card-text">Équipement pour loisirs et survie.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img src="transmometre.jpg.jpg.jpg" class="card-img-top" alt="Thermomètre">
+            <div class="card-body">
+              <h5 class="card-title">Thermomètre Numérique</h5>
+              <p class="card-text">Matériel pou la santé sou demann.</p>
+            </div>
+          </div>
+        </div>
+      </div>     </div>   </section>
+ 
+    <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <p>© 2025 Azerty Multiservices. Tous droits réservés.</p>
+      <p>Email : azertymultiservices4@gmail.com | Téléphone : +509 39045395</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
